@@ -1,0 +1,54 @@
+html, body {
+  font-family: 'Ubuntu Mono', monospace;
+  font-size: 100%; }
+
+ul {
+  list-style-type: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+h1 {
+  font-size: 2.5em; }
+
+.center {
+  margin: 0 auto; }
+
+.textCenter {
+  text-align: center; }
+
+header {
+  background-color: #424242;
+  height: 40px;
+  color: #FFF; }
+  header nav {
+    width: 90%; }
+  header p, header ul {
+    display: inline-block; }
+  header p {
+    vertical-align: top;
+    font-size: 1.4em;
+    margin-top: 9px; }
+  header ul {
+    float: right;
+    height: 40px; }
+    header ul li {
+      display: inline; }
+      header ul li i {
+        margin-top: 4px; }
+
+section {
+  color: #424242; }
+
+@media screen and (min-width: 801px) {
+  header nav {
+    width: 80%; }
+
+  header li a:after {
+    content: attr(data-link);
+    font-size: 1.2em;
+    padding-left: 5px; } }
+@media screen and (min-width: 1201px) {
+  header nav {
+    width: 70%; } }
