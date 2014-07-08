@@ -19,6 +19,9 @@ a {
 h1 {
 	font-size: 2.5em;
 }
+h2 {
+	font-size: 2.0em;
+}
 
 // class stylings
 .center {
@@ -38,29 +41,44 @@ header {
 
 	nav {
 		width: 90%;
+		height: inherit;
 	}
 	
 	p, ul {
 		display: inline-block;
+		vertical-align: baseline;
 	}
 
 	p {
-		vertical-align: top;
-		font-size: 1.4em;
-		margin-top: 9px;
+		height: inherit;
+		line-height: 40px;
+		font-size: 1.5em;
 	}
 	
 	ul {
+		height: inherit;
 		float: right;
-		height: 40px;
-		
 		li {
 			display: inline;
-			
 			i {
 				margin-top: 4px;
 			}
-		}		
+		}
+/*		
+		li a:hover::before {
+			position: absolute;
+			border: solid;
+			border-color: $grey transparent;
+			border-width: 0 10px 10px 10px;
+			margin: 45px 0 0 4px;
+			content: "";			
+		}
+		li a:hover::after {
+			position: absolute;
+			content: attr(data-link);
+			width: 150px;
+		}
+*/	
 	}
 }
 
@@ -71,12 +89,18 @@ section {
 @media screen and (min-width: 801px) {
 	header nav {
 		width: 80%;
-	}
+		
+		p {
+			font-size: 2.0em;		
+		}
 
-	header li a:after {
-		content: attr(data-link);
-		font-size: 1.2em;
-		padding-left: 5px;
+		li a:after {
+			content: attr(data-link);
+			display: inherit;
+			font-size: 1.2em;
+			padding: auto 5px;
+			height: 40px;
+		}
 	}
 
 }
@@ -85,4 +109,16 @@ section {
 	header nav {
 		width: 70%;
 	}
+}
+
+// responsive transition test
+@mixin transition($duration) {
+	transition: all $duration lnear;
+	-moz-transition: all $duration linear;
+	-o-transition: all $duration linear;
+	-webkit-transition: all $duration linear;
+}
+	
+header nav, header nav p {
+	@include transition(.15s);
 }

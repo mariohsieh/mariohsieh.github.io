@@ -12,6 +12,9 @@ a {
 h1 {
   font-size: 2.5em; }
 
+h2 {
+  font-size: 2.0em; }
+
 .center {
   margin: 0 auto; }
 
@@ -23,16 +26,33 @@ header {
   height: 40px;
   color: #FFF; }
   header nav {
-    width: 90%; }
+    width: 90%;
+    height: inherit; }
   header p, header ul {
-    display: inline-block; }
+    display: inline-block;
+    vertical-align: baseline; }
   header p {
-    vertical-align: top;
-    font-size: 1.4em;
-    margin-top: 9px; }
+    height: inherit;
+    line-height: 40px;
+    font-size: 1.5em; }
   header ul {
+    height: inherit;
     float: right;
-    height: 40px; }
+    /*		
+    		li a:hover::before {
+    			position: absolute;
+    			border: solid;
+    			border-color: $grey transparent;
+    			border-width: 0 10px 10px 10px;
+    			margin: 45px 0 0 4px;
+    			content: "";			
+    		}
+    		li a:hover::after {
+    			position: absolute;
+    			content: attr(data-link);
+    			width: 150px;
+    		}
+    */ }
     header ul li {
       display: inline; }
       header ul li i {
@@ -44,11 +64,19 @@ section {
 @media screen and (min-width: 801px) {
   header nav {
     width: 80%; }
-
-  header li a:after {
-    content: attr(data-link);
-    font-size: 1.2em;
-    padding-left: 5px; } }
+    header nav p {
+      font-size: 2.0em; }
+    header nav li a:after {
+      content: attr(data-link);
+      display: inherit;
+      font-size: 1.2em;
+      padding: auto 5px;
+      height: 40px; } }
 @media screen and (min-width: 1201px) {
   header nav {
     width: 70%; } }
+header nav, header nav p {
+  transition: all 0.15s lnear;
+  -moz-transition: all 0.15s linear;
+  -o-transition: all 0.15s linear;
+  -webkit-transition: all 0.15s linear; }
