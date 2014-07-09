@@ -10,9 +10,12 @@ a {
   color: inherit; }
 
 h1 {
-  font-size: 2.5em; }
+  font-size: 3.0em; }
 
 h2 {
+  font-size: 2.5em; }
+
+h3 {
   font-size: 2.0em; }
 
 .center {
@@ -20,6 +23,18 @@ h2 {
 
 .textCenter {
   text-align: center; }
+
+.textRight {
+  text-align: right; }
+
+.rounded {
+  border-radius: 25px;
+  -moz-border-radius: 25px;
+  -o-border-radius: 25px;
+  -webkit-border-radius: 25px; }
+
+.active {
+  color: deepskyblue; }
 
 header {
   background-color: #424242;
@@ -56,10 +71,30 @@ header {
     header ul li {
       display: inline; }
       header ul li i {
-        margin-top: 4px; }
+        margin: 4px 2px 0; }
 
-section {
+.container {
+  padding: 10px 0;
   color: #424242; }
+  .container nav {
+    width: 60%;
+    margin-left: 20%;
+    text-align: center; }
+    .container nav li {
+      font-size: 2.0em;
+      cursor: pointer; }
+  .container article {
+    padding-top: 10px;
+    text-align: center; }
+    .container article div {
+      padding: 0 10px;
+      display: none; }
+    .container article #bio img {
+      display: none; }
+    .container article #bio p:first-letter {
+      font-size: 1.8em; }
+    .container article #projects {
+      font-size: 1.25em; }
 
 @media screen and (min-width: 801px) {
   header nav {
@@ -71,11 +106,44 @@ section {
       display: inherit;
       font-size: 1.2em;
       padding: auto 5px;
-      height: 40px; } }
+      height: 40px; }
+
+  .container {
+    font-size: 110%; }
+    .container nav, .container article {
+      width: 80%;
+      margin-left: 10%; }
+    .container nav li {
+      display: inline;
+      padding: 0 20px; }
+    .container article {
+      text-align: left; }
+      .container article #bio img {
+        display: inherit;
+        float: right;
+        width: 150px; } }
 @media screen and (min-width: 1201px) {
   header nav {
-    width: 70%; } }
-header nav, header nav p {
+    width: 70%; }
+
+  .container {
+    font-size: 125%; }
+    .container nav, .container article {
+      display: inline-block;
+      text-align: left;
+      vertical-align: top; }
+    .container nav {
+      width: 20%;
+      margin-left: 10%; }
+      .container nav li {
+        display: block;
+        padding: 0; }
+    .container article {
+      width: 60%;
+      margin-left: 0; }
+      .container article #bio img {
+        width: 200px; } }
+header nav, header nav p, .container {
   transition: all 0.15s lnear;
   -moz-transition: all 0.15s linear;
   -o-transition: all 0.15s linear;

@@ -1,5 +1,23 @@
 // variables
 $grey: #424242;
+$lightGrey: #E6E6E6;
+$blue: #00BFFF;
+
+// mixins
+@mixin roundedEdges($radius) {
+	border-radius: $radius;
+	-moz-border-radius: $radius;
+	-o-border-radius: $radius;
+	-webkit-border-radius: $radius;
+}
+
+@mixin transition($duration) {
+	transition: all $duration lnear;
+	-moz-transition: all $duration linear;
+	-o-transition: all $duration linear;
+	-webkit-transition: all $duration linear;
+}
+	
 
 // whole doc
 html, body {
@@ -17,9 +35,12 @@ a {
 }
 
 h1 {
-	font-size: 2.5em;
+	font-size: 3.0em;
 }
 h2 {
+	font-size: 2.5em;
+}
+h3 {
 	font-size: 2.0em;
 }
 
@@ -32,6 +53,17 @@ h2 {
 	text-align: center;
 }
 
+.textRight {
+	text-align: right;
+}
+
+.rounded {
+	@include roundedEdges(25px);
+}
+
+.active {
+	color: $blue;
+}
 
 // tag stylings
 header {
@@ -61,7 +93,7 @@ header {
 		li {
 			display: inline;
 			i {
-				margin-top: 4px;
+				margin: 4px 2px 0;
 			}
 		}
 /*		
@@ -82,14 +114,56 @@ header {
 	}
 }
 
-section {
+.container {
+	padding: 10px 0;
 	color: $grey;
+	nav {
+		width: 60%;
+		margin-left: 20%;
+		text-align: center;
+		li {
+			//background-color: $lightGrey;
+			font-size: 2.0em;
+			cursor: pointer;
+		}
+	}
+	article {
+		padding-top: 10px;
+		text-align: center;
+		div {
+			padding: 0 10px;
+			display: none;
+		}
+		#bio {
+			img {
+				display: none;
+			}
+			p:first-letter {
+				font-size: 1.8em;
+			}
+		}
+		#projects {
+			font-size: 1.25em;
+		}
+	}
 }
+
+
+// responsive break points
+@media screen and (min-width: 401px) {
+	.container {
+		nav {
+			li {
+				//font-size: 
+			}
+		}
+	}
+}
+
 
 @media screen and (min-width: 801px) {
 	header nav {
 		width: 80%;
-		
 		p {
 			font-size: 2.0em;		
 		}
@@ -102,23 +176,72 @@ section {
 			height: 40px;
 		}
 	}
-
+	.container {
+		font-size: 110%;
+		nav, article {
+			width: 80%;
+			margin-left: 10%;
+		}
+		nav {
+			li {
+				display: inline;
+				padding: 0 20px;
+			}
+		}
+		article {
+			text-align: left;
+			#bio {
+				p {
+					//text-align: left;
+				}
+				img {
+					display: inherit;
+					float: right;
+					width: 150px;
+				}
+			}			
+		}
+	}
 }
+
 
 @media screen and (min-width: 1201px) {
 	header nav {
 		width: 70%;
 	}
+	.container {
+		font-size: 125%;
+		nav, article {
+			display: inline-block;
+			text-align: left;
+			vertical-align: top;
+		}	
+		nav {
+			width: 20%;
+			margin-left: 10%;
+			li {
+				display: block;
+				padding: 0;
+			}			
+		}
+		article {
+			width: 60%;
+			margin-left: 0;
+			
+			#bio img {
+				width: 200px;
+			}
+		}
+	}	
 }
 
-// responsive transition test
-@mixin transition($duration) {
-	transition: all $duration lnear;
-	-moz-transition: all $duration linear;
-	-o-transition: all $duration linear;
-	-webkit-transition: all $duration linear;
+
+@media screen and (min-width: 1601px) {
+
 }
-	
-header nav, header nav p {
+
+
+// transitions	
+header nav, header nav p, .container {
 	@include transition(.15s);
 }

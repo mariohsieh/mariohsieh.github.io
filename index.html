@@ -1,6 +1,7 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
+	<meta charset=utf-8" />
 	<title>mario hsieh portfolio</title>
 	
 	<!-- css links-->
@@ -34,15 +35,40 @@
 			</ul>
 		</nav>
 	</header>
-	<section>
+	<section class="container">
 		<h1 class="textCenter">welcome!</h1>
-		<h2>portfolio</h2>
-		<ul>
-			<li>projects</li>
-			<li>artwork</li>
-			<li>animation</li>
-		</ul>
+		<nav>
+			<ul>
+				<li>bio</li>
+				<li>projects</li>
+				<li>artwork</li>
+				<li>animation</li>
+			</ul>
+		</nav>
+		<article>
+			<div id="bio">
+				<img class="rounded" src="img/profile-pic-01.jpg" alt="profile pic" />
+				<p>
+					Thank you for visiting my online portfolio.&nbsp;&nbsp;You will find a selection of my web projects, hand-drawn artwork, and 3D animation.&nbsp;&nbsp;Please take a look around and if you have any questions or comments, feel free to contact me.
+				</p>
+			</div>
+			<div id="projects">
+				<ul>
+					<li><a target="_blank" href="http://chitty-chat.herokuapp.com">chitty chat</a></li>
+					<li><a target="_blank" href="http://world-cup-bracket.herokuapp.com/">world cup pick 'em 2014</a></li>
+					<li><a target="_blank" href="http://easy-notes.herokuapp.com">easy notes</a></li>
+				</ul>
+			</div>
+			<div id="artwork">
+				<!-- list artwork thumbnails -->
+			</div>
+			<div id="animation">
+				<!--<iframe src="http://player.vimeo.com/video/68598965?title=0&amp;byline=0&amp;portrait=0" width="600" height="337"></iframe>-->
+			</div>
+		</article>
 	</section>
 	<!-- js links -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
