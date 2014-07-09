@@ -95,6 +95,12 @@ header {
       font-size: 1.8em; }
     .container article #projects {
       font-size: 1.25em; }
+      .container article #projects a {
+        color: deepskyblue; }
+      .container article #projects span {
+        display: none; }
+    .container article #animation iframe {
+      display: none; }
 
 @media screen and (min-width: 801px) {
   header nav {
@@ -115,13 +121,32 @@ header {
       margin-left: 10%; }
     .container nav li {
       display: inline;
-      padding: 0 20px; }
+      padding: 0 15px; }
     .container article {
+      padding-top: 20px;
+      margin-top: 20px;
+      border-top: 2px solid #424242;
       text-align: left; }
+      .container article #bio p {
+        margin-left: 110px; }
       .container article #bio img {
         display: inherit;
-        float: right;
-        width: 150px; } }
+        float: left;
+        width: 100px; }
+      .container article #projects ul {
+        width: 500px;
+        margin: 0 auto; }
+      .container article #projects span {
+        display: inherit;
+        font-size: .8em;
+        margin-left: 10px; }
+      .container article #animation iframe {
+        margin: 0 auto;
+        display: inherit;
+        width: 600px;
+        height: 337px; }
+      .container article #animation a {
+        display: none; } }
 @media screen and (min-width: 1201px) {
   header nav {
     width: 70%; }
@@ -130,19 +155,30 @@ header {
     font-size: 125%; }
     .container nav, .container article {
       display: inline-block;
-      text-align: left;
+      padding-top: 30px;
       vertical-align: top; }
     .container nav {
-      width: 20%;
-      margin-left: 10%; }
+      width: 15%;
+      margin-left: 10%;
+      border-right: 2px solid #424242;
+      padding-right: 20px;
+      height: 370px;
+      text-align: right; }
       .container nav li {
         display: block;
         padding: 0; }
     .container article {
-      width: 60%;
-      margin-left: 0; }
+      width: 65%;
+      border-top: none;
+      margin: 0;
+      text-align: left; }
+      .container article #bio p {
+        margin-left: 0; }
       .container article #bio img {
-        width: 200px; } }
+        float: right;
+        width: 200px; }
+      .container article #projects ul {
+        width: auto; } }
 header nav, header nav p, .container {
   transition: all 0.15s lnear;
   -moz-transition: all 0.15s linear;

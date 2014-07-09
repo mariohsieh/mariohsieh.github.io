@@ -17,7 +17,7 @@ $blue: #00BFFF;
 	-o-transition: all $duration linear;
 	-webkit-transition: all $duration linear;
 }
-	
+
 
 // whole doc
 html, body {
@@ -43,6 +43,7 @@ h2 {
 h3 {
 	font-size: 2.0em;
 }
+
 
 // class stylings
 .center {
@@ -144,6 +145,17 @@ header {
 		}
 		#projects {
 			font-size: 1.25em;
+			a {
+				color: $blue;
+			}
+			span {
+				display: none;
+			}
+		}
+		#animation {
+			iframe {
+				display: none;
+			}
 		}
 	}
 }
@@ -185,21 +197,46 @@ header {
 		nav {
 			li {
 				display: inline;
-				padding: 0 20px;
+				padding: 0 15px;
 			}
 		}
 		article {
+			padding-top: 20px;
+			margin-top: 20px;
+			border-top: 2px solid $grey;
 			text-align: left;
 			#bio {
 				p {
-					//text-align: left;
+					margin-left: 110px;
 				}
 				img {
 					display: inherit;
-					float: right;
-					width: 150px;
+					float: left;
+					width: 100px;
 				}
-			}			
+			}
+			#projects {
+				ul {
+					width: 500px;
+					margin: 0 auto;
+				}
+				span {
+					display: inherit;
+					font-size: .8em;
+					margin-left: 10px;
+				}
+			}
+			#animation {
+				iframe {
+					margin: 0 auto;
+					display: inherit;
+					width: 600px;
+					height: 337px;
+				}
+				a {
+					display: none;
+				}
+			}	
 		}
 	}
 }
@@ -213,23 +250,39 @@ header {
 		font-size: 125%;
 		nav, article {
 			display: inline-block;
-			text-align: left;
+			padding-top: 30px;
 			vertical-align: top;
 		}	
 		nav {
-			width: 20%;
+			width: 15%;
 			margin-left: 10%;
+			border-right: 2px solid $grey;
+			padding-right: 20px;
+			height: 370px;
+			text-align: right;
 			li {
 				display: block;
 				padding: 0;
 			}			
 		}
-		article {
-			width: 60%;
-			margin-left: 0;
-			
-			#bio img {
-				width: 200px;
+		article {		
+			width: 65%;
+			border-top: none;
+			margin: 0;
+			text-align: left;			
+			#bio {
+				p {
+					margin-left: 0;
+				}
+				img {
+					float: right;
+					width: 200px;
+				}
+			}
+			#projects {
+				ul {
+					width: auto;
+				}
 			}
 		}
 	}	
