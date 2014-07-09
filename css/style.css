@@ -36,6 +36,24 @@ h3 {
 .active {
   color: deepskyblue; }
 
+.overlay {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); }
+  .overlay img {
+    position: fixed;
+    left: 10%;
+    right: 10%;
+    top: 50%;
+    width: 80%;
+    height: auto;
+    transform: translate(0%, -50%);
+    -moz-transform: translate(0%, -50%);
+    -o-transform: translate(0%, -50%);
+    -webkit-transform: translate(0%, -50%); }
+
 header {
   background-color: #424242;
   height: 40px;
@@ -99,9 +117,27 @@ header {
         color: deepskyblue; }
       .container article #projects span {
         display: none; }
+    .container article #artwork img {
+      width: 75%;
+      cursor: pointer; }
     .container article #animation iframe {
       display: none; }
 
+@media screen and (min-width: 401px) {
+  .overlay img {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 10%;
+    bottom: 10%;
+    width: auto;
+    height: 80%;
+    min-height: 500px;
+    margin: 0 auto;
+    transform: translate(0%, 0%);
+    -moz-transform: translate(0%, 0%);
+    -o-transform: translate(0%, 0%);
+    -webkit-transform: translate(0%, 0%); } }
 @media screen and (min-width: 801px) {
   header nav {
     width: 80%; }
@@ -127,12 +163,15 @@ header {
       margin-top: 20px;
       border-top: 2px solid #424242;
       text-align: left; }
-      .container article #bio p {
-        margin-left: 110px; }
-      .container article #bio img {
-        display: inherit;
-        float: left;
-        width: 100px; }
+      .container article #bio {
+        width: 75%;
+        margin: 0 auto; }
+        .container article #bio p {
+          margin-left: 110px; }
+        .container article #bio img {
+          display: inherit;
+          float: left;
+          width: 100px; }
       .container article #projects ul {
         width: 500px;
         margin: 0 auto; }
@@ -140,6 +179,10 @@ header {
         display: inherit;
         font-size: .8em;
         margin-left: 10px; }
+      .container article #artwork li {
+        display: inline; }
+      .container article #artwork img {
+        width: 32%; }
       .container article #animation iframe {
         margin: 0 auto;
         display: inherit;
@@ -172,11 +215,14 @@ header {
       border-top: none;
       margin: 0;
       text-align: left; }
-      .container article #bio p {
-        margin-left: 0; }
-      .container article #bio img {
-        float: right;
-        width: 200px; }
+      .container article #bio {
+        width: auto;
+        margin: 0; }
+        .container article #bio p {
+          margin-left: 0; }
+        .container article #bio img {
+          float: right;
+          width: 200px; }
       .container article #projects ul {
         width: auto; } }
 header nav, header nav p, .container {

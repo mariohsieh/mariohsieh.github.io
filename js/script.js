@@ -6,6 +6,8 @@ $(document).ready(function() {
 	}
 
 	// event handlers
+	
+	// main navigation click
 	$(document).on("click", ".container nav li", function() {
 		var pagelink = $(this).html();
 		$(".container nav li").removeClass("active");
@@ -14,7 +16,17 @@ $(document).ready(function() {
 		$('#'+pagelink).css("display", "inherit");
 	});
 
-
+	// artwork click
+	$(document).on("click", "#artwork img", function() {
+		var imageName = $(this).attr("alt");
+		$(".overlay").css("display", "block").append("<img alt='"+imageName+"' src='img/"+imageName+".jpg' />");
+	});
+	
+	// exit from gallery
+	$(document).on("click", ".overlay", function() {
+		$(this).css("display", "none").empty();
+	});
+		
 	initial();
 });
 

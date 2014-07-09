@@ -66,6 +66,26 @@ h3 {
 	color: $blue;
 }
 
+.overlay {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,.80);
+	img {
+		position: fixed;
+		left: 10%;
+		right: 10%;
+		top: 50%;
+		width: 80%;
+		height: auto;
+		transform: translate(0%,-50%);
+		-moz-transform: translate(0%,-50%);
+		-o-transform: translate(0%,-50%);
+		-webkit-transform: translate(0%,-50%);	
+	}
+}
+
 // tag stylings
 header {
 	background-color: $grey;
@@ -152,6 +172,12 @@ header {
 				display: none;
 			}
 		}
+		#artwork {
+			img {
+				width: 75%;
+				cursor: pointer;
+			}
+		}
 		#animation {
 			iframe {
 				display: none;
@@ -163,6 +189,23 @@ header {
 
 // responsive break points
 @media screen and (min-width: 401px) {
+	.overlay {
+		img {
+			position: fixed;
+			left: 0;
+			right: 0;
+			top: 10%;
+			bottom: 10%;
+			width: auto;
+			height: 80%;
+			min-height: 500px;
+			margin: 0 auto;
+			transform: translate(0%,0%);
+			-moz-transform: translate(0%,0%);
+			-o-transform: translate(0%,0%);
+			-webkit-transform: translate(0%,0%);
+		}
+	}
 	.container {
 		nav {
 			li {
@@ -206,6 +249,8 @@ header {
 			border-top: 2px solid $grey;
 			text-align: left;
 			#bio {
+				width: 75%;
+				margin: 0 auto;
 				p {
 					margin-left: 110px;
 				}
@@ -224,6 +269,17 @@ header {
 					display: inherit;
 					font-size: .8em;
 					margin-left: 10px;
+				}
+			}
+			#artwork {
+				ul {
+					//margin: 0 auto;
+				}
+				li {
+					display: inline;
+				}
+				img {
+					width: 32%;
 				}
 			}
 			#animation {
@@ -271,6 +327,8 @@ header {
 			margin: 0;
 			text-align: left;			
 			#bio {
+				width: auto;
+				margin: 0;
 				p {
 					margin-left: 0;
 				}
