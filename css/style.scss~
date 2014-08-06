@@ -347,7 +347,6 @@ header {
 					width: 200px;
 				}
 				figure {
-					clear: none;
 					margin-top: 75px;
 					img {
 						margin: 25px 2% 0;

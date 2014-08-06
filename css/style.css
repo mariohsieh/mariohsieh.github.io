@@ -107,7 +107,7 @@ header {
     .container article div {
       padding: 0 10px;
       display: none; }
-    .container article #bio img {
+    .container article #bio figure, .container article #bio #profile-pic {
       display: none; }
     .container article #bio p:first-letter {
       font-size: 1.8em; }
@@ -168,10 +168,18 @@ header {
         margin: 0 auto; }
         .container article #bio p {
           margin-left: 110px; }
-        .container article #bio img {
+        .container article #bio #profile-pic {
           display: inherit;
           float: left;
           width: 100px; }
+        .container article #bio figure {
+          clear: both;
+          display: block;
+          text-align: center; }
+          .container article #bio figure img {
+            display: inline-block;
+            width: 150px;
+            margin: 25px 1% 0; }
       .container article #projects ul {
         width: 500px;
         margin: 0 auto; }
@@ -220,12 +228,17 @@ header {
         margin: 0; }
         .container article #bio p {
           margin-left: 0; }
-        .container article #bio img {
+        .container article #bio #profile-pic {
           float: right;
           width: 200px; }
+        .container article #bio figure {
+          clear: none;
+          margin-top: 75px; }
+          .container article #bio figure img {
+            margin: 25px 2% 0; }
       .container article #projects ul {
         width: auto; } }
-header nav, header nav p, .container {
+header nav, header nav p, .container * {
   transition: all 0.15s lnear;
   -moz-transition: all 0.15s linear;
   -o-transition: all 0.15s linear;

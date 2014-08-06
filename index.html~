@@ -1,9 +1,103 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
+	<meta charset=utf-8" />
 	<title>mario hsieh portfolio</title>
+	
+	<!-- css links-->
+	<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="css/reset.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+	
 </head>
 <body>
-	<h1>holla!</h1>
+	<div class="overlay"></div>
+	<header>
+		<nav class="center">
+			<p>mario hsieh</p>
+			<ul>
+				<!--<li><i class="fa fa-envelope fa-2x"></i></li>-->
+				<li>
+					<a target="_blank" href="resume-mario-hsieh.pdf" data-link="resume">
+						<i class="fa fa-file-text fa-2x" data-link="resume"></i>
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://github.com/mariohsieh" data-link="gitHub">
+						<i class="fa fa-github-square fa-2x"></i>
+					</a>
+				</li>
+				<li>
+					<a target="_blank" href="https://www.linkedin.com/in/mariohsieh" data-link="linkedIn">
+						<i class="fa fa-linkedin-square fa-2x"></i>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<section class="container">
+		<h1 class="textCenter">welcome!</h1>
+		<nav>
+			<ul>
+				<li>bio</li>
+				<li>projects</li>
+				<li>artwork</li>
+				<li>animation</li>
+			</ul>
+		</nav>
+		<article>
+			<div id="bio">
+				<img id="profile-pic" class="rounded" src="img/profile-pic-01.jpg" alt="profile pic" />
+				<p>
+					Thank you for visiting my online portfolio.&nbsp;&nbsp;You will find a selection of my web projects, hand-drawn artwork, and 3D animation.&nbsp;&nbsp;Please take a look around and if you have any questions or comments, feel free to contact me.
+				</p>
+				<figure>
+					<img class="scenery rounded" src="img/hike.jpg" /><!--
+					--><img class="scenery  rounded" src="img/snow.jpg" /><!--
+					--><img class="scenery  rounded" src="img/sunset.jpg" />
+				</figure>
+			</div>
+			<div id="projects">
+				<ul>
+					<li>
+						<a target="_blank" href="http://medical-studies.herokuapp.com/">medical studies</a>
+						<span>search for studies and see results visualized in bar charts</span>
+					</li>					
+					<li>
+						<a target="_blank" href="http://chitty-chat.herokuapp.com">chitty chat</a>
+						<span>real-time chat app using web sockets</span>
+					</li>
+					<li>
+						<a target="_blank" href="http://world-cup-bracket.herokuapp.com/">world cup pick 'em 2014</a>
+						<span>march-madness style tourney app for the world cup 2014</span>
+					</li>
+					<li>
+						<!--<a target="_blank" href="http://easy-notes.herokuapp.com">easy notes</a>-->
+						<a target="_blank" href="http://mariohsieh.com/projects/notes">quick notes</a>
+						<span>create and edit notes instantly</span>
+					</li>
+					<li>
+						<a target="_blank" href="#">intro to bootstrap curriculum (in-progress)</a>
+						<span>lesson plan for railsbridge workshops</span>
+					</li>					
+				</ul>
+			</div>
+			<div id="artwork">
+				<ul>
+					<li><img alt="tupac-01" src="img/tupac-01-tn.jpg" class="rounded" /></li>
+					<li><img alt="zayn-01" src="img/zayn-01-tn.jpg" class="rounded" /></li>
+					<li><img alt="tupac-02" src="img/tupac-02-tn.jpg" class="rounded" /></li>
+				</ul>
+			</div>
+			<div id="animation">
+				<iframe src="http://player.vimeo.com/video/68598965?title=0&amp;byline=0&amp;portrait=0"></iframe>
+				<a target="_blank" href="http://vimeo.com/68598965">vimeo</a>
+			</div>
+		</article>
+	</section>
+	<!-- js links -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
