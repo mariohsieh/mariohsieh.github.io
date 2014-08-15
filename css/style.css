@@ -111,11 +111,11 @@ header {
       display: none; }
     .container article #bio p:first-letter {
       font-size: 1.8em; }
-    .container article #projects {
+    .container article #projects, .container article #curriculum {
       font-size: 1.25em; }
-      .container article #projects a {
+      .container article #projects a, .container article #curriculum a {
         color: deepskyblue; }
-      .container article #projects span {
+      .container article #projects span, .container article #curriculum span {
         display: none; }
     .container article #artwork img {
       width: 75%;
@@ -180,10 +180,10 @@ header {
             display: inline-block;
             width: 150px;
             margin: 25px 1% 0; }
-      .container article #projects ul {
+      .container article #projects ul, .container article #curriculum ul {
         width: 500px;
         margin: 0 auto; }
-      .container article #projects span {
+      .container article #projects span, .container article #curriculum span {
         display: inherit;
         font-size: .8em;
         margin-left: 10px; }
@@ -236,7 +236,7 @@ header {
           margin-top: 75px; }
           .container article #bio figure img {
             margin: 25px 2% 0; }
-      .container article #projects ul {
+      .container article #projects ul, .container article #curriculum ul {
         width: auto; } }
 header nav, header nav p, .container * {
   transition: all 0.15s lnear;
