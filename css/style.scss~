@@ -163,7 +163,7 @@ header {
 				font-size: 1.8em;
 			}
 		}
-		#projects {
+		#projects, #curriculum {
 			font-size: 1.25em;
 			a {
 				color: $blue;
@@ -270,7 +270,7 @@ header {
 					}
 				}
 			}
-			#projects {
+			#projects, #curriculum {
 				ul {
 					width: 500px;
 					margin: 0 auto;
@@ -347,13 +347,14 @@ header {
 					width: 200px;
 				}
 				figure {
+					clear: none;
 					margin-top: 75px;
 					img {
 						margin: 25px 2% 0;
 					}
 				}
 			}
-			#projects {
+			#projects, #curriculum {
 				ul {
 					width: auto;
 				}

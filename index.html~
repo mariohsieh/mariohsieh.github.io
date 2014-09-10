@@ -5,10 +5,10 @@
 	<title>mario hsieh portfolio</title>
 	
 	<!-- css links-->
-	<link href='http://fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
+	<link href='//fonts.googleapis.com/css?family=Ubuntu+Mono' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="css/reset.css" />
 	<link rel="stylesheet" href="css/style.css" />
-	<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
 	
 </head>
 <body>
@@ -42,6 +42,7 @@
 			<ul>
 				<li>bio</li>
 				<li>projects</li>
+				<li>curricula</li>
 				<li>artwork</li>
 				<li>animation</li>
 			</ul>
@@ -53,9 +54,9 @@
 					Thank you for visiting my online portfolio.&nbsp;&nbsp;You will find a selection of my web projects, hand-drawn artwork, and 3D animation.&nbsp;&nbsp;Please take a look around and if you have any questions or comments, feel free to contact me.
 				</p>
 				<figure>
-					<img class="scenery rounded" src="img/hike.jpg" /><!--
-					--><img class="scenery  rounded" src="img/snow.jpg" /><!--
-					--><img class="scenery  rounded" src="img/sunset.jpg" />
+					<img class="rounded" src="img/hike.jpg" /><!--
+					--><img class="rounded" src="img/snow.jpg" /><!--
+					--><img class="rounded" src="img/sunset.jpg" />
 				</figure>
 			</div>
 			<div id="projects">
@@ -72,15 +73,20 @@
 						<a target="_blank" href="http://world-cup-bracket.herokuapp.com/">world cup pick 'em 2014</a>
 						<span>march-madness style tourney app for the world cup 2014</span>
 					</li>
+<!--					
 					<li>
-						<!--<a target="_blank" href="http://easy-notes.herokuapp.com">easy notes</a>-->
-						<a target="_blank" href="http://mariohsieh.com/projects/notes">quick notes</a>
+						<a target="_blank" href="http://easy-notes.herokuapp.com">easy notes</a>
 						<span>create and edit notes instantly</span>
 					</li>
+-->										
+				</ul>
+			</div>
+			<div id="curriculum">
+				<ul>
 					<li>
-						<a target="_blank" href="#">intro to bootstrap curriculum (in-progress)</a>
-						<span>lesson plan for railsbridge workshops</span>
-					</li>					
+						<a target="_blank" href="http://mariohsieh.info/intro-to-bootstrap/">intro to bootstrap (in-progress)</a>
+						<span>bootstrap lesson plan for railsbridge workshops</span>
+					</li>
 				</ul>
 			</div>
 			<div id="artwork">
@@ -97,7 +103,7 @@
 		</article>
 	</section>
 	<!-- js links -->
-	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 	<script src="js/script.js"></script>
 </body>
 </html>

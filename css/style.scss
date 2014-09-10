@@ -12,7 +12,7 @@ $blue: #00BFFF;
 }
 
 @mixin transition($duration) {
-	transition: all $duration lnear;
+	transition: all $duration linear;
 	-moz-transition: all $duration linear;
 	-o-transition: all $duration linear;
 	-webkit-transition: all $duration linear;
