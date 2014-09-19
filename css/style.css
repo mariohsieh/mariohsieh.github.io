@@ -183,6 +183,8 @@ header {
       .container article #projects ul, .container article #curriculum ul {
         width: 500px;
         margin: 0 auto; }
+        .container article #projects ul li, .container article #curriculum ul li {
+          margin: 10px 0; }
       .container article #projects span, .container article #curriculum span {
         display: inherit;
         font-size: .8em;
@@ -239,7 +241,7 @@ header {
       .container article #projects ul, .container article #curriculum ul {
         width: auto; } }
 header nav, header nav p, .container * {
-  transition: all 0.15s lnear;
+  transition: all 0.15s linear;
   -moz-transition: all 0.15s linear;
   -o-transition: all 0.15s linear;
   -webkit-transition: all 0.15s linear; }
